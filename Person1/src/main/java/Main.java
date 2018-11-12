@@ -7,14 +7,16 @@ public class Main {
     public static void main(String[] args) {
 
         String file = readFile("personen.csv");
-        String[] namen = file.split(";");
-        Person[] bewohner = new Person[namen.length / 2 - 2];
+        String[] namen = file.split("\n");
+        Person[] bewohner = new Person[namen.length - 1];
 
-        for (int i = 2; i < bewohner.length; i += 2) {
-            bewohner[]
+        for (int i = 0; i < bewohner.length; i++) {
+            bewohner[i] = new Person(namen[i + 1].split(";")[0], namen[i + 1].split(";")[1]);
         }
 
-        System.out.println(file);
+        for (int i = 0; i < bewohner.length; i++) {
+            System.out.println(bewohner[i]);
+        }
 
     }
 

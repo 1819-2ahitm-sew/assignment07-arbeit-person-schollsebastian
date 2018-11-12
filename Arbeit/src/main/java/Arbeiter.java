@@ -9,7 +9,7 @@ public class Arbeiter extends Arbeitnehmer {
 
     @Override
     public double getEntgelt() {
-        return stundenlohn;
+        return stundenlohn * 40;
     }
 
 }

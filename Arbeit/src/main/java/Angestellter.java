@@ -1,6 +1,6 @@
 public class Angestellter extends Arbeitnehmer {
 
-    protected double gehalt;
+    private double gehalt;
 
     Angestellter(String beruf, String arbeitgeber, int gehalt) {
         super(beruf, arbeitgeber);

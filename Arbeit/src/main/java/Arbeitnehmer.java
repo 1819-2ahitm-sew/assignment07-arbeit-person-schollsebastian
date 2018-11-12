@@ -10,4 +10,12 @@ abstract class Arbeitnehmer {
 
     abstract public double getEntgelt();
 
+    public String getBeruf() {
+        return beruf;
+    }
+
+    public String getArbeitgeber() {
+        return arbeitgeber;
+    }
+
 }
